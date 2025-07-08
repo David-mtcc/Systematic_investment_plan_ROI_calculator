@@ -19,29 +19,22 @@ Simulates the growth of an investment with monthly contributions and continuous 
   
 ## 🔢 Mathematical Background
 
-This project models the growth of an investment with continuous compounding interest and regular monthly contributions, calculated year by year.
 
-The total capital at year n (Total_n) is computed iteratively as:
+**The total capital at year \( n \) (Totalₙ) is computed iteratively as:**
 
-Total_n = Total_(n-1) × e^r + sum from i=1 to 12 of [C × e^(r × (12 - i + 1)/12)]
+```math
+\mathrm{Total}_n = \mathrm{Total}_{n-1} e^{r} + \sum_{i=1}^{12} C e^{r \frac{12 - i + 1}{12}}
+```
+where:
 
-where:  
-- Total_(n-1) is the capital at the end of the previous year  
-- r is the annual interest rate  
-- C is the monthly contribution  
+- $\{Total}_{n-1}$ is the capital at the end of the previous year  
+- $r$ is the annual interest rate  
+- $C$ is the monthly contribution   
 - Each monthly contribution is compounded continuously for the remaining fraction of the year.
 
 This recursive formula reflects:
 
-- The initial capital and previously accumulated amount growing continuously for one full year,
+- The initial capital and previously accumulated amount growing continuously for one full year,  
 - Plus the value of all monthly deposits made during the current year, each compounded continuously from the month of deposit until the year’s end.
 
 By iterating this calculation year by year, the program accurately simulates investment growth combining continuous compounding and regular savings.
-
-
-The formula for continuous compounding is:
-
-\[
-A = P e^{rt}
-\]
-
