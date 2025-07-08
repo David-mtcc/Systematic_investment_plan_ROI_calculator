@@ -46,5 +46,6 @@ Here's an example of a ROI calculation over 20 years for a saving plan character
 - Initial Capital = 10'000 €
 - Regular monthly contribution = 100 €
 
-![image](https://github.com/user-attachments/assets/fb85800f-07d5-469d-af3e-df2f7790b031)
+![image](https://github.com/user-attachments/assets/54342f4f-9426-45c1-b035-e2368e73f41d)
+
 
