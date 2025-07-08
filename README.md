@@ -20,7 +20,7 @@ Simulates the growth of an investment with monthly contributions and continuous 
 ## 🔢 Mathematical Background
 
 
-**The total capital at year \( n \) (Totalₙ) is computed iteratively as:**
+**The total capital at year $n$ ($\{Total}_{n}$) is computed iteratively as:**
 
 ```math
 \mathrm{Total}_n = \mathrm{Total}_{n-1} e^{r} + \sum_{i=1}^{12} C e^{r \frac{12 - i + 1}{12}}
@@ -38,3 +38,13 @@ This recursive formula reflects:
 - Plus the value of all monthly deposits made during the current year, each compounded continuously from the month of deposit until the year’s end.
 
 By iterating this calculation year by year, the program accurately simulates investment growth combining continuous compounding and regular savings.
+
+## Example
+
+Here's an example of a ROI calculation over 20 years for a saving plan characterized by:
+- Interest rate = 5 %
+- Initial Capital = 10'000 €
+- Regular monthly contribution = 100 €
+
+![image](https://github.com/user-attachments/assets/fb85800f-07d5-469d-af3e-df2f7790b031)
+
